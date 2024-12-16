@@ -1,1 +1,1 @@
-export const env={"PUBLIC_FASTAPI":"http://127.0.0.1:8000"}
+export const env={}
