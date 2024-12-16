@@ -61,15 +61,15 @@ def load_df_from_blob(endpoint):
 
 
 # Load Files to memory
-# category_config = load_categorical_config_file_from_blob()
-# tax_code_static_df = load_df_from_blob(endpoint=endpoint_config['tax_code_info'])
-# same_legal_entity = load_df_from_blob(endpoint=endpoint_config['legal_entities'])
-# concatenated_tax_description = load_df_from_blob(endpoint=endpoint_config['tax_code_description'])
-# company_code_df = load_df_from_blob(endpoint=endpoint_config['company_code_info'])
-# vendor_country_df = load_df_from_blob(endpoint=endpoint_config['vendor_info'])
-# attention_list_df = load_df_from_blob(endpoint=endpoint_config['attention_list'])
-# ip_vat_df = load_df_from_blob(endpoint=endpoint_config['ip_vat_issues'])
-# historical_meta = load_df_from_blob(endpoint=endpoint_config['historical_meta'])
+category_config = load_categorical_config_file_from_blob()
+tax_code_static_df = load_df_from_blob(endpoint=endpoint_config['tax_code_info'])
+same_legal_entity = load_df_from_blob(endpoint=endpoint_config['legal_entities'])
+concatenated_tax_description = load_df_from_blob(endpoint=endpoint_config['tax_code_description'])
+company_code_df = load_df_from_blob(endpoint=endpoint_config['company_code_info'])
+vendor_country_df = load_df_from_blob(endpoint=endpoint_config['vendor_info'])
+attention_list_df = load_df_from_blob(endpoint=endpoint_config['attention_list'])
+ip_vat_df = load_df_from_blob(endpoint=endpoint_config['ip_vat_issues'])
+historical_meta = load_df_from_blob(endpoint=endpoint_config['historical_meta'])
 
 
 def get_reporting_country(company_code: str) -> Tuple[Optional[str], Optional[str]]:
