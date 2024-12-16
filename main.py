@@ -24,16 +24,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/assets", StaticFiles(directory="public/assets"), name="static")
+# app.mount("/assets", StaticFiles(directory="public/assets"), name="static")
 
-@app.get("/favicon.png", response_class=FileResponse)
-async def favicon_png():
-    return FileResponse("public/favicon.png")
+# @app.get("/favicon.png", response_class=FileResponse)
+# async def favicon_png():
+#     return FileResponse("public/favicon.png")
 
 
-@app.get("/", response_class=FileResponse)
-async def main():
-    return "public/index.html"
+# @app.get("/", response_class=FileResponse)
+# async def main():
+#     return "public/index.html"
 
 
 class TaxCodePredictionRequest(BaseModel):
@@ -252,7 +252,7 @@ def get_historical_meta_table():
 
 
 
-app.mount("/", StaticFiles(directory="public", html=True))
+# app.mount("/", StaticFiles(directory="public", html=True))
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
