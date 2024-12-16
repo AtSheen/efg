@@ -24,11 +24,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# app.mount("/assets", StaticFiles(directory="public/assets"), name="static")
 
-# @app.get("/favicon.png", response_class=FileResponse)
-# async def favicon_png():
-#     return FileResponse("public/favicon.png")
 
 
 @app.get("/")
